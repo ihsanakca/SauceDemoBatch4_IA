@@ -32,5 +32,9 @@ public class ProductsStepDefs {
     }
 
 
+    @When("The user navigate to your cart page")
+    public void theUserNavigateToYourCartPage() {
+        productsPage.yourCartLink.click();
+    }
 }
 

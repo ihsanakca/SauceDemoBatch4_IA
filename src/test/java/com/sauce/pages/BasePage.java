@@ -14,6 +14,9 @@ public abstract class BasePage {
     @FindBy(css = ".shopping_cart_badge")
     public WebElement yourCartQuantity;
 
+    @FindBy(xpath = "//a[@class='shopping_cart_link']")
+    public WebElement yourCartLink;
+
     public String  getPageTitle(String pageTitle){
         return Driver.get().findElement(By.xpath("//span[text()='"+pageTitle+"']")).getText();
     }
